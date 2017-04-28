@@ -1,3 +1,3 @@
+require('definition')
 require('rspec')
-require('anagram')
 require('pry')

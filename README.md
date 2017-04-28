@@ -1,29 +1,30 @@
-# _Anagrammer_
+# _Sub/Urban Dictionary_
 
-#### _Application finds all the word possibilities with the given letters, 04/21/2017_
+#### _Application allows children to create and define their own jargon, 04/28/2017_
 
 #### By _**Trevor Fast**_
 
 ## Description
 
-_The purpose of the app is to take an input in a text field and find all word combinations with the given set of letters. This will be done only using each given letter once._
+_The purpose of the app is to take an input from a child in a text field and post it to a server where it can be amended with a multiple definitions The words and definition are of any variety that they see fit._
 
 
 ## Setup/Installation Requirements
 
 * _Download or clone code from github_
+* _https://github.com/Sommersette/Dictionary-Ruby.git_
 * _In an internet browser of your choice load the server. localhost:4567_
 * _Using terminal/command line navigate to the project folder and run 'ruby app.rb'.
-* _Reload the server by hitting the refresh button._
-* _Enter text into the text field and click the button to see the possible angrams._
+* _Reload the server by hitting the refresh button or ctrl + F5._
+* _Enter text into the text field and click the button to see the possible words and corresponding definitions._
 
 
 ## Specifications
 
 | Behavior |  Input   |  Output  |
 |----------|:--------:|:--------:|
-|All words with capital letters and change them to lowercase|Dad|dad|
-|Check if two words are anagrams|||
+||||
+||||
 ||||
 ||||
 ||||
@@ -45,4 +46,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Trevor Fast_**
