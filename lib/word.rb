@@ -1,8 +1,8 @@
 class Word
+  @@Word = []
   attr_accessor(:word, :definition, :id)
-end
 
-@@Word = []
+
 
 define_method(:initialize) do |attributes|
   @word = attributes.fetch(:word)
@@ -35,3 +35,4 @@ end
 define_method(:definition) do |definition|
   @definition.push(definition)
   end
+end
