@@ -8,3 +8,7 @@ also_reload('views/**/*.erb')
 require('rspec')
 require('launchy')
 require('pry')
+
+get('/') do
+  erb(:index)
+end
