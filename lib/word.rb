@@ -1,5 +1,6 @@
 class Word
   attr_accessor(:word, :definition, :id)
+
   @@Word = []
 
 
@@ -22,13 +23,13 @@ define_singleton_method(:clear) do
 end
 
 define_singleton_method(:find) do |indentification|
-  matched_word = nil
+  found_word = nil
   @@word.each() do |word|
-    if word.id() == indentification.to_i
-      matched_word = word
+    if word.id().eql?(indentification.to_i())
+      found_word = word
     end
   end
-  matched_word
+  found_word
 end
 
 define_method(:definition) do |definition|
