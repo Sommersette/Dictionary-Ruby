@@ -1,7 +1,6 @@
 class Word
-  @@Word = []
   attr_accessor(:word, :definition, :id)
-
+  @@Word = []
 
 
 define_method(:initialize) do |attributes|
