@@ -34,6 +34,11 @@ class Word
     end
     found_word
   end
+
+  define_method(:new_definition) do |definition|
+    @definition.push(definition)
+  end
+
 end
 
 # ### Definition ### #
@@ -53,13 +58,9 @@ class Definition
       @@total_definitions
     end
 
-  define_method(:new_definition) do |definition|
-    @definition.push(definition)
-  end
+
 
   define_method(:save) do
     @@total_definitions.push(@definition)
   end
-
-
 end
