@@ -55,7 +55,10 @@ describe(".find") do
     end
   end
 
+end
 #  ### definition ### #
+
+describe(Definition) do
 
   describe("#definition") do
     it("will add a new definition") do
@@ -65,6 +68,11 @@ describe(".find") do
   end
 
 
+describe(".all") do
+  it("returns all definition in the array") do
+    expect(Definition.all()).to(eq([]))
+  end
+end
 
   describe("#id") do
     it("returns the id for a definition")do
@@ -73,9 +81,20 @@ describe(".find") do
     end
   end
 
-  describe(".all") do
-    it("returns all definition in the array") do
-      expect(Definition.all()).to(eq([]))
+  # describe("#new_definition") do
+  #   it("allows a new definition to be added to a word") do
+  #     test_word = Word.new ({:word => 'petrichor'})
+  #     test_definition = Definition.new({:definition => 'The scent of rain on the earth after a prolonged dry spell.'})
+  #     test_word.new_definition(test_definition)
+  #     expect(test_word.definitions()).to(eq([test_definition]))
+  #   end
+  # end
+
+  describe("#save") do
+    it("saves a definition when added to a word") do
+      test_definition = Definition.new({:definition => 'The scent of rain on the earth after a prolonged dry spell.'})
+      test_definition.save()
+      expect(Definition.all()).to(eq(['The scent of rain on the earth after a prolonged dry spell.']))
     end
   end
 

@@ -6,7 +6,7 @@ class Word
   #
   define_method(:initialize) do |attributes|
     @word = attributes.fetch(:word)
-    @definition= []
+    @definition = []
     @id = @@Word.length().+(1)
   end
 
@@ -53,13 +53,13 @@ class Definition
       @@total_definitions
     end
 
-    # define_method(:save) do
-    #   @@total_definitions.push(@definition)
-    # end
+  define_method(:new_definition) do |definition|
+    @definition.push(definition)
+  end
 
-    define_method(:new_definition) do |definition|
-      @definition.push(definition)
-    end
+  define_method(:save) do
+    @@total_definitions.push(@definition)
+  end
 
 
 end
