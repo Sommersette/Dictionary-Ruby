@@ -9,5 +9,6 @@ require('launchy')
 require('pry')
 
 get('/') do
+  @word = Word.all
   erb(:index)
 end
