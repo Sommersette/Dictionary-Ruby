@@ -1,0 +1,13 @@
+<h3><%=@word.name%></h3>
+<hr>
+<h2>Definition(s): </h2>
+<ul>
+  <%@word.definitions.each do |definition|%>
+  <li><%=definition.text%></li>
+  <%end%>
+</ul>
+
+<a class='btn btn-default' href='/words/<%=@word.id%>/definitions/new'>What's that mean?</a>
+<hr>
+
+<a class='btn btn-default' href='/'>Home</a>

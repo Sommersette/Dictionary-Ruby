@@ -14,20 +14,20 @@ class Word
 
   #
   define_singleton_method(:all) do
-    @@word
+    @@Word
   end
   #
   define_method(:save) do
-    @@word.push(self)
+    @@Word.push(self)
   end
   #
   define_singleton_method(:clear) do
-    @@word = []
+    @@Word = []
   end
   #
   define_singleton_method(:find) do |indentification|
     found_word = nil
-    @@word.each() do |word|
+    @@Word.each() do |word|
       if word.id().eql?(indentification.to_i())
         found_word = word
       end
